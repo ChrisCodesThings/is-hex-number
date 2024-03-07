@@ -1,2 +1,2 @@
-export { default } from "./src/testRepo.js";
+export { default } from "./src/isHexNumber.js";
 

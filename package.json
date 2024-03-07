@@ -1,15 +1,16 @@
 {
-  "name": "@chriscodesthings/test-repo",
-  "version": "1.0.3",
-  "description": "Testing packages",
+  "name": "@chriscodesthings/is-hex-number",
+  "version": "1.0.0",
+  "description": "Determine if a string can be evaluated as a hexadecimal number",
   "keywords": [
-    "test",
-    "testing",
-    "package"
+    "type",
+    "string",
+    "number",
+    "hex"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisCodesThings/test-repo.git"
+    "url": "git+https://github.com/ChrisCodesThings/is-hex-number.git"
   },
   "main": "index.js",
   "type": "module",
@@ -21,13 +22,14 @@
     "node": ">=18.0.0"
   },
   "bugs": {
-    "url": "https://github.com/ChrisCodesThings/test-repo/issues"
+    "url": "https://github.com/ChrisCodesThings/is-hex-number/issues"
   },
   "scripts": {
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
+  "dependencies": {},
   "devDependencies": {
     "auto-changelog": "*",
     "jest": "*"
