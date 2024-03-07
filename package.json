@@ -1,0 +1,45 @@
+{
+  "name": "@chriscodesthings/test-repo",
+  "version": "1.0.3",
+  "description": "Testing packages",
+  "keywords": [
+    "test",
+    "testing",
+    "package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisCodesThings/test-repo.git"
+  },
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "/index.js",
+    "/src"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ChrisCodesThings/test-repo/issues"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "auto-changelog": "*",
+    "jest": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Chris Dabrowa",
+    "email": "fanmail@chris.dabrowa.uk",
+    "url": "http://chris.dabrowa.uk/code"
+  },
+  "contributors": [],
+  "license": "MIT"
+}
