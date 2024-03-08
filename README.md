@@ -16,3 +16,21 @@ import isHexNumber from '@chriscodesthings/is-hex-number';
 console.log(isHexNumber("deadd0d0"));
 // => true
 ```
+
+## Syntax
+
+```js
+isHexNumber( str);
+```
+
+### Parameters
+
+- *str*: text string to test
+
+### Return Value
+
+Returns boolean true if str is a valid hex number, false otherwise.
+
+## Description
+
+Does what it says on the tin.
