@@ -20,7 +20,7 @@ console.log(isHexNumber("deadd0d0"));
 ## Syntax
 
 ```js
-isHexNumber( str);
+isHexNumber(str);
 ```
 
 ### Parameters
