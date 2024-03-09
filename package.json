@@ -1,6 +1,6 @@
 {
   "name": "@chriscodesthings/is-hex-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Determine if a string can be evaluated as a hexadecimal number",
   "keywords": [
     "type",
