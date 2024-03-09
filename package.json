@@ -29,7 +29,9 @@
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@chriscodesthings/is-string": "1.0.1"
+  },
   "devDependencies": {
     "auto-changelog": "*",
     "jest": "*"
