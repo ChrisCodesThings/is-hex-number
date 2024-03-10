@@ -29,7 +29,7 @@ isHexNumber(str);
 
 ### Return Value
 
-Returns boolean true if str is a valid hex number, false otherwise.
+Returns boolean true if *str* is a valid hex number, false otherwise.
 
 ## Description
 
