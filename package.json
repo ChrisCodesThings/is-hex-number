@@ -32,11 +32,11 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@chriscodesthings/is-string": "1.0.1"
+    "@chriscodesthings/is-string": "^1.0.1"
   },
   "devDependencies": {
-    "auto-changelog": "*",
-    "jest": "*"
+    "auto-changelog": "^2.4.0",
+    "jest": "^29.7.0"
   },
   "publishConfig": {
     "access": "public"
