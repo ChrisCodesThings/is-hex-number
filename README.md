@@ -13,23 +13,27 @@ npm install --save @chriscodesthings/is-hex-number
 ```js
 import isHexNumber from '@chriscodesthings/is-hex-number';
 
-console.log(isHexNumber("deadd0d0"));
+console.log(isHexNumber("c0ffee"));
+// => true
+
+console.log(isHexNumber("ace.cafe", true));
 // => true
 ```
 
 ## Syntax
 
 ```js
-isHexNumber(str);
+isHexNumber(hex, float);
 ```
 
 ### Parameters
 
-- *str*: text string to test
+- *hex*: a string to test
+- *float* (optional): if `true`, allow a floating point hex number
 
 ### Return Value
 
-Returns boolean true if *str* is a valid hex number, false otherwise.
+Returns boolean `true` if *hex* is a valid hex number, `false` otherwise.
 
 ## Description
 
