@@ -1,7 +1,7 @@
 
 const { default: testFunc } = await import("../");
 
-describe("check if strings are hexadecimal numbers", () => {
+describe("check for bad input", () => {
     test("nothing", async () => {
         expect(testFunc()).toEqual(false);
     });
@@ -18,15 +18,31 @@ describe("check if strings are hexadecimal numbers", () => {
         expect(testFunc("")).toEqual(false);
     });
 
+    test("an invalid string", async () => {
+        expect(testFunc("foo")).toEqual(false);
+    });
+});
+
+describe("whole numbers", () => {
     test("hex charset", async () => {
         expect(testFunc("0123456789abcdef")).toEqual(true);
     });
 
     test("hex string", async () => {
-        expect(testFunc("deadd0d0")).toEqual(true);
+        expect(testFunc("c0ffee")).toEqual(true);
     });
 
-    test("not a hex string", async () => {
-        expect(testFunc("foo")).toEqual(false);
+    test("not a whole number", async () => {
+        expect(testFunc("dead.d0d0")).toEqual(false);
+    });
+});
+
+describe("floating point numbers", () => {
+    test("hex charset", async () => {
+        expect(testFunc("abcd.1234", true)).toEqual(true);
+    });
+
+    test("hex string", async () => {
+        expect(testFunc("ace.cafe", true)).toEqual(true);
     });
 });
