@@ -33,3 +33,20 @@ describe("floating point numbers", () => {
         expect(testFunc("a.b.c.d", true)).toEqual(false);
     });
 });
+
+describe("0x prefix", () => {
+    test("present but not allowed", async () => {
+        expect(testFunc("0xabcd")).toEqual(false);
+        expect(testFunc("0xace.cafe")).toEqual(false);
+    });
+
+    test("allowed without float", async () => {
+        expect(testFunc("0xabcd", false, true)).toEqual(true);
+        expect(testFunc("0xace.cafe", false, true)).toEqual(false);
+    });
+
+    test("allowed with float", async () => {
+        expect(testFunc("0xabcd", true, true)).toEqual(true);
+        expect(testFunc("0xace.cafe", true, true)).toEqual(true);
+    });
+});

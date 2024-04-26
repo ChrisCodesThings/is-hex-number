@@ -32,13 +32,14 @@ console.log(isHexNumber("c0ffee"));
 ## Syntax
 
 ```js
-isHexNumber(str, float);
+isHexNumber(str, float, prefix0x);
 ```
 
 ### Parameters
 
 - *str*: a string to test
 - *float* (optional): if `true`, allow a floating point hex number
+- *prefix0x* (optional): if `true`, allow the 0x prefix
 
 ### Return Value
 
